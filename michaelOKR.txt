@@ -1,0 +1,4 @@
+Creating objects that should be properly collected by Koi -- Monday by 5:00 PM (estimate: 10 mins)
+Writing collision script for both Cube and Enemy -- Monday by 5:30 PM (estimate: 30 mins)
+Creating enemies objects -- Monday by 5:40 PM (estimate: 10 mins)
+Assisting in Blue Spirit controls -- Tuesday by 12 AM (estimate 3 hours)

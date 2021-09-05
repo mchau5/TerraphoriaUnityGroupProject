@@ -1,0 +1,5 @@
+Schedule and deliverable:
+
+Design and build obstacles -- Tue 3pm (estimate: 2 hrs)
+Make "Spawn the object at the mouse position" function -- Tue 22pm (estimate: 1 hr)
+Make "Spawn the object at the mouse position" function -- Wed 3pm (estimate: 1 hr) [sub/supplement]

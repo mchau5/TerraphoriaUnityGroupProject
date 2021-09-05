@@ -1,0 +1,11 @@
+
+
+1.  The two cubes representing the two characters
+
+2. The spirit being able to spawn objects at the mouse location
+
+3. A cube representing an enemy
+
+4. Objects that Koi can collect around the level
+
+5. And an object at the end of the level that can be picked up by Koi to end the level

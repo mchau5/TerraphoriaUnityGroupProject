@@ -1,0 +1,7 @@
+Schedule and deliverable:
+	Player code for movement -- Mon by 6pm
+	(estimate: 1 hr) 
+	Player code for interaction with objects -- Tue by 3pm
+	(estimate: 2 hr)
+	Camera positioning for gameplay -- Tue by 4pm
+	(estimate: 1 hr)
