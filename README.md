@@ -1,5 +1,72 @@
 # Terraphoria
 
+
+
+
+
+
+
+**Design**
+
+We designed Koi to be someone who is natively from the eastern hemisphere and will have to traverse through the map. The map we made is to citylike along with a mix of some outdoors. The reason we chose this is because we wanted the player to first be able to settle down in an open outdoorish field before having them introduced into the city where it will most likely but a bit more narrow. In terms of the yakuza models the first model we made was the motorcyclist model. The reason we chose this model was because out of all the models in mixamo he looked the closest to a gang member and looked somewhat menacing. The animation he has attached is a walking animation because he is constantly moving on patrol so we thought this would be a good implementation. The AI we decided to implement on him was patrolling because we thought it would be appropriate for a yakuza member to be patrolling around the area making sure there are no intruders. The next model we decided to do was a vampire with a hood and the reason why we chose this model is because he is easily distinguishable as an evil character so the player may not mistaken him as an ally. The animation we chose for this character is some sort of guard animation because he should be blocking the player from his destination. When it comes to the overall map, the map was made so it is impossible to traverse through without the use of "Terraforming" because that is the key aspect of our game. The sounds we implemented also matched the overall theme and an example of this would be the sound notification of when the player terraforms. We made sure that the sound was somewhat “eerie” because the overall aspect of terraforming is supernatural. Other sounds were designed so that it gives the player some sort of feedback that their action has successfully been done. The lights added were also made with the map in mind. The neon red lights help set up the “Downtown” feel of the area it is in since cities often have neon red lights. The streetlight is also near the player spawn to help illuminate the beginning area so they may properly see where they are going. In the end we feel that all of our assets and design decisions have helped create the overall feel of the downtown Tokyo environment we originally had planned. 
+
+**AI**  
+• Yakuza member using navmesh to patrol and chase the player when in range. otherwise return back to patrol - Michael Chau  
+• Vampire unit that will chase the player and attempt to block their path (uses navmesh as well) - Jiajun Mo  
+• Pedestrian ai that should utilize an FSM to patrol from point A to point B - John Cervantes  
+• RBS that ensured the player can not jump multiple times while in the air. - Michael Chau/John Cervantes/Jiajun Mo  
+
+
+**Mecanim**  
+• Koi model + animations - John Cervantes  
+• Yakuza member (Motocyclist model) + animations - Michael Chau  
+• Yakuza member (Vampire model) + animations - Jiajun Mo  
+
+The changes we made for our game in order to meet the requirements for assignment 7 are the following:
+
+**UI Design**
+
+-- Michael Chau			
+
+• Added an HP bar so the player may now see how much HP is remaining. The HP bar will properly be updated as the player takes damage and should now allow the player to properly know when they are in danger.
+
+• Solved this by adding a billboard that suggests what the player should do. With this billboard the players should now be able to properly understand that the main objective of the game is to collect all the floating orbs in order to beat the game.
+
+• Fixed by having another board explaining how sprinting adds spirit energy. By having this billboard explain an alternative to gaining spirit energy, players may not use this alternative to gain enough energy to attack again without possibly waiting for the natural generation or picking up foliage.
+
+-- John Cervantes
+
+• To fix the first instance, I implemented a resource bar for the accompanying spirit where the player can see the usage of the accompanying spirit’s aura. Thus, it is clear to the player how much resource for the aura of the accompanying spirit is currently left, allowing the player to manage their usage of the aura.
+
+• To fix the second instance, I implemented a physical sign for the player located at the beginning of the scene to describe to the player how to play the game. The physical sign describes the input needed for movement, terraforming, firing spirit attacks, and interacting with foliage. Thus, it is clear to the player how to play the game by describing what inputs do what in the game.
+		
+• To fix the third instance, I changed the material of the obstacles into a brick material that is a less saturated red color. The brick material helps avoid saturated colors as it is a lower shade of red and is less saturated compared to the previously used saturated purple color. Additionally, the brick material helps with clarity as it makes the obstacles look like obstacles as brick is often associated with walls and are viewed as obstacles. Thus, it is clear to the player that the obstacles are obstacles and color was used more sparingly.
+	
+
+-- Jiajun Mo
+
+• Added more action effects. When the player is far away from the monster, the monster will be in a standby state, and the walking and attack modes will be switched according to the distance. Fixed the mold penetration caused by monsters moving or being attacked.
+
+• Increased the HP value, which will be displayed when the monster is in the player's field of vision. If the player is too far away from the monster, the monster will return to its initial position and restore its HP value.
+
+• The monster will die and disappear when its HP returns to zero, and the strange rotation and displacement caused by the player's attack by the monster has been fixed. At the same time, monsters during the death animation can no longer be attacked, and the "attacked" animation appears in the death animation.
+
+**Sounds created for the game:**
+
+• Terraforming sound
+
+• Pedestrian sounds
+
+• Spirit projectile sound
+
+• Enemy hit by spirit projectile sound
+
+• Footstep sounds
+
+**Other modifications**
+
+We updated the overall map to help fill in the void and emptiness of the previous map. We the additions of trees, more buildings, and background music we aimed to help set up the specific environment/mood we intend for the player. Also along with all the additions of the features listed above we aimed to help make the player experience more immersive and fluid while playing our game. Lastly the additions of the new UI and other features were aimed to give more clarity to the player and perhaps give more assistance.
+
 **Assignment 9 Section**
 
 **How we modified the design of “Terraphoria” since the alpha release:**
@@ -114,82 +181,5 @@ Shader design:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 **end of assignment 9 section**
-
-
-
-
-
-
-**Design**
-
-We designed Koi to be someone who is natively from the eastern hemisphere and will have to traverse through the map. The map we made is to citylike along with a mix of some outdoors. The reason we chose this is because we wanted the player to first be able to settle down in an open outdoorish field before having them introduced into the city where it will most likely but a bit more narrow. In terms of the yakuza models the first model we made was the motorcyclist model. The reason we chose this model was because out of all the models in mixamo he looked the closest to a gang member and looked somewhat menacing. The animation he has attached is a walking animation because he is constantly moving on patrol so we thought this would be a good implementation. The AI we decided to implement on him was patrolling because we thought it would be appropriate for a yakuza member to be patrolling around the area making sure there are no intruders. The next model we decided to do was a vampire with a hood and the reason why we chose this model is because he is easily distinguishable as an evil character so the player may not mistaken him as an ally. The animation we chose for this character is some sort of guard animation because he should be blocking the player from his destination. When it comes to the overall map, the map was made so it is impossible to traverse through without the use of "Terraforming" because that is the key aspect of our game. The sounds we implemented also matched the overall theme and an example of this would be the sound notification of when the player terraforms. We made sure that the sound was somewhat “eerie” because the overall aspect of terraforming is supernatural. Other sounds were designed so that it gives the player some sort of feedback that their action has successfully been done. The lights added were also made with the map in mind. The neon red lights help set up the “Downtown” feel of the area it is in since cities often have neon red lights. The streetlight is also near the player spawn to help illuminate the beginning area so they may properly see where they are going. In the end we feel that all of our assets and design decisions have helped create the overall feel of the downtown Tokyo environment we originally had planned. 
-
-**AI**  
-• Yakuza member using navmesh to patrol and chase the player when in range. otherwise return back to patrol - Michael Chau  
-• Vampire unit that will chase the player and attempt to block their path (uses navmesh as well) - Jiajun Mo  
-• Pedestrian ai that should utilize an FSM to patrol from point A to point B - John Cervantes  
-• RBS that ensured the player can not jump multiple times while in the air. - Michael Chau/John Cervantes/Jiajun Mo  
-
-
-**Mecanim**  
-• Koi model + animations - John Cervantes  
-• Yakuza member (Motocyclist model) + animations - Michael Chau  
-• Yakuza member (Vampire model) + animations - Jiajun Mo  
-
-The changes we made for our game in order to meet the requirements for assignment 7 are the following:
-
-**UI Design**
-
--- Michael Chau			
-
-• Added an HP bar so the player may now see how much HP is remaining. The HP bar will properly be updated as the player takes damage and should now allow the player to properly know when they are in danger.
-
-• Solved this by adding a billboard that suggests what the player should do. With this billboard the players should now be able to properly understand that the main objective of the game is to collect all the floating orbs in order to beat the game.
-
-• Fixed by having another board explaining how sprinting adds spirit energy. By having this billboard explain an alternative to gaining spirit energy, players may not use this alternative to gain enough energy to attack again without possibly waiting for the natural generation or picking up foliage.
-
--- John Cervantes
-
-• To fix the first instance, I implemented a resource bar for the accompanying spirit where the player can see the usage of the accompanying spirit’s aura. Thus, it is clear to the player how much resource for the aura of the accompanying spirit is currently left, allowing the player to manage their usage of the aura.
-
-• To fix the second instance, I implemented a physical sign for the player located at the beginning of the scene to describe to the player how to play the game. The physical sign describes the input needed for movement, terraforming, firing spirit attacks, and interacting with foliage. Thus, it is clear to the player how to play the game by describing what inputs do what in the game.
-		
-• To fix the third instance, I changed the material of the obstacles into a brick material that is a less saturated red color. The brick material helps avoid saturated colors as it is a lower shade of red and is less saturated compared to the previously used saturated purple color. Additionally, the brick material helps with clarity as it makes the obstacles look like obstacles as brick is often associated with walls and are viewed as obstacles. Thus, it is clear to the player that the obstacles are obstacles and color was used more sparingly.
-	
-
--- Jiajun Mo
-
-• Added more action effects. When the player is far away from the monster, the monster will be in a standby state, and the walking and attack modes will be switched according to the distance. Fixed the mold penetration caused by monsters moving or being attacked.
-
-• Increased the HP value, which will be displayed when the monster is in the player's field of vision. If the player is too far away from the monster, the monster will return to its initial position and restore its HP value.
-
-• The monster will die and disappear when its HP returns to zero, and the strange rotation and displacement caused by the player's attack by the monster has been fixed. At the same time, monsters during the death animation can no longer be attacked, and the "attacked" animation appears in the death animation.
-
-**Sounds created for the game:**
-
-• Terraforming sound
-
-• Pedestrian sounds
-
-• Spirit projectile sound
-
-• Enemy hit by spirit projectile sound
-
-• Footstep sounds
-
-**Other modifications**
-
-We updated the overall map to help fill in the void and emptiness of the previous map. We the additions of trees, more buildings, and background music we aimed to help set up the specific environment/mood we intend for the player. Also along with all the additions of the features listed above we aimed to help make the player experience more immersive and fluid while playing our game. Lastly the additions of the new UI and other features were aimed to give more clarity to the player and perhaps give more assistance.
